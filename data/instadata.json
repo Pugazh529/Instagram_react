@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "type": "user",
+      "id": 1,
+      "username": "pugazh_dev",
+      "name": "Pugazh",
+      "profilePicture": "https://i.pinimg.com/1200x/ab/b5/33/abb533741bcd9b568b61308b20d49673.jpg",
+      "bio": "Frontend dev | React enthusiast",
+      "followers": [
+        2
+      ],
+      "following": [
+        2
+      ],
+      "posts": [
+        {
+          "id": 1,
+          "image": "https://i.pinimg.com/736x/e4/5c/52/e45c5210444971a69c4b740e158d111c.jpg",
+          "caption": "Exploring React!",
+          "timestamp": "2025-07-31T12:34:56",
+          "likes": [
+            2
+          ],
+          "comments": [
+            {
+              "id": 1,
+              "userId": 2,
+              "text": "Wow, looks cool!",
+              "timestamp": "2025-07-31T13:00:00"
+            },
+            {
+              "id": 2,
+              "userId": 1,
+              "text": "Thanks!",
+              "timestamp": "2025-07-31T13:10:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "user",
+      "id": 2,
+      "username": "jane_doe",
+      "name": "Jane Doe",
+      "profilePicture": "https://i.pinimg.com/736x/57/16/6a/57166a79afaabefac92058fa0b0a2709.jpg",
+      "bio": "Photographer & Traveler",
+      "followers": [
+        1
+      ],
+      "following": [
+        1
+      ],
+      "posts": [
+        {
+          "id": 2,
+          "image": "https://i.pinimg.com/736x/75/62/da/7562daa507805fe222b7bbe10aca7a73.jpg",
+          "caption": "Mountains are calling!",
+          "timestamp": "2025-07-30T10:10:10",
+          "likes": [
+            1
+          ],
+          "comments": []
+        }
+      ]
+    },
+    {
+      "type": "user",
+      "id": 3,
+      "username": "john_doe",
+      "name": "Jane Doe",
+      "profilePicture": "https://i.pinimg.com/736x/70/68/07/7068072e5557d61a22c1c9480c60c281.jpg",
+      "bio": "#Traveler",
+      "followers": [
+        1
+      ],
+      "following": [
+        1
+      ],
+      "posts": [
+        {
+          "id": 2,
+          "image": "https://i.pinimg.com/736x/b7/de/47/b7de47c86470d268dba4461e8a600539.jpg",
+          "caption": "Like to live!",
+          "timestamp": "2025-07-30T10:10:10",
+          "likes": [
+            1
+          ],
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
