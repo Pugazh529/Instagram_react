@@ -22,6 +22,7 @@ function Suggestion() {
         <div className='d-flex profilepicusername' key={profile.id}>
           <img className=' dp rounded-circle' src={profile.profilePicture} alt="Profileimg" />
           <h5>{profile.username}</h5>
+          <p>{profile.bio}</p>
         </div>
         : <p>Loding</p>}
     </div>
