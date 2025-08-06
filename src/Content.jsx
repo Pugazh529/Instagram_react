@@ -6,7 +6,7 @@ function Content() {
 
     useEffect(() => {
 
-        fetch('http://localhost:3000/users')
+        fetch('https://pugazh-creator.github.io/Host/instadata.json')
             .then((data) => data.json())
             .then((data) => {
                 setPost(data);
