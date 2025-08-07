@@ -22,9 +22,6 @@
   margin-top: 10px;
 }
 
-.Reel-page{
-  height: 100px;
-}
 
 #profilepic{
   width: 200px;
@@ -54,4 +51,23 @@
 
 .suggestion h5{
   font-size: 16px;
+}
+
+.gradient-border {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff00ff, #ff6600, #ffcc00);
+}
+
+.story-dp{
+  width: 40px;
+}
+
+.story-page{
+  height: 70px;
+
 }

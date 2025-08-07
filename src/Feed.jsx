@@ -1,10 +1,11 @@
 import React from 'react'
 import Content from './Content'
+import Story from './assets/Story'
 
 function Feed() {
   return (
     <div className='parent'>
-        <div className='Reel-page bg-info'>Reels</div>
+        <div className='story-page'><Story/></div>
         <div className=''><Content/></div>
     </div>
   )
