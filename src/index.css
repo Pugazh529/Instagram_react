@@ -11,10 +11,19 @@
 
 .bi{
   margin-right: 10px;
+  font-size: larger;
 }
+.content-page .bi{
+  margin-right: 10px;
+
+}
+
+.content-page .logos{
+  margin-top: 10px;
+}
+
 .Reel-page{
   height: 100px;
-  background-color: antiquewhite;
 }
 
 #profilepic{
@@ -25,9 +34,6 @@
   width: 200px;
 }
 
-.content{
-  height: inherit;
-}
 .dp{
   width: 30px;
   height: 30px;
@@ -45,3 +51,7 @@
 /* .posts {
  margin-left: 50%;  
 } */
+
+.suggestion h5{
+  font-size: 16px;
+}
