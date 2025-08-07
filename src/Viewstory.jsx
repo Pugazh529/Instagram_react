@@ -1,26 +1,36 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 function Viewstory() {
 
     const [story, setStory] = useState(null);
     const { id } = useParams();
+    const [storyid, setStoryid] = useState(null);
+
+    useEffect(() => {
+        setStoryid(parseInt(id)); // convert string param to number
+    }, [id]);
 
     useEffect(() => {
         fetch("https://pugazh529.github.io/HostData/story.json")
             .then((data) => data.json())
             .then((data) => {
-                  const matchedstroy=data.find((item)=> item.id === parseInt(id)) ;
-                  setStory(matchedstroy); 
+                const matchedstroy = data.find((item) => item.id === parseInt(storyid));
+                setStory(matchedstroy);
             })
-    }, [])
+    }, [storyid])
 
-    if(!story) return  <div>Loading</div>;
+
+    if (!story) return <div>Loading</div>;
 
     return (
 
         <div>
-            <h1>{story.user.username}</h1>
+            <div className="d-flex justify-content-center align-items-center">
+                <button onClick={() => setStoryid(storyid + 1)}><i className="bi bi-arrow-left-square-fill"></i></button>
+                <img className="vh-100" src={story.image} alt="" />
+                <button onClick={() => setStoryid(storyid - 1)}><i className="bi bi-arrow-right-square-fill"></i></button>
+            </div>
         </div>
     );
 }
