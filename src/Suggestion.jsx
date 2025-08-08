@@ -5,6 +5,7 @@ function Suggestion() {
 
   const [profile, setProfile] = useState(null);
   const [suggestion, setSuggestion] = useState([]);
+  const [isFellowed,setFellowed]=useState(false);
 
   useEffect(() => {
     fetch('https://pugazh529.github.io/HostData/profile.json')
@@ -23,7 +24,12 @@ function Suggestion() {
       .catch((e) => console.log(e));
   }, []);
 
+  const handlefellow =(id) =>{
 
+      setFellowed((prev) =>
+    prev.includes(id) ? prev.filter((fId) => fId !== id) : [...prev, id]
+  );
+};
 
 
   return (
@@ -48,7 +54,7 @@ function Suggestion() {
               <div className='d-flex profilepicusername'>
                 <img className=' dp rounded-circle' src={suggestion.profilePicture} alt="Profileimg" />
                 <h5>{suggestion.username}</h5>
-                <p className='text-primary ms-auto'>Fellow</p>
+                <a className='text-primary ms-auto' onClick={(e)=> handlefellow(suggestion.id) }>{isFellowed ? "Fellowed" : "Fellow" }</a>
               </div>
             </div>
 
