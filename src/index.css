@@ -30,6 +30,9 @@
 .card .m-3{
   width: 200px;
 }
+.sidebarlogo{
+ cursor: pointer;
+}
 
 .dp{
   width: 30px;
@@ -65,6 +68,9 @@
 
 .story-dp{
   width: 40px;
+}
+.story img{
+ cursor: pointer;
 }
 
 .story-page{

@@ -9,7 +9,7 @@ function Sidebar() {
     const navigate = useNavigate();
     return (
         <div className='sidebar m-3 position-fixed'>
-            <div className='d-flex flex-column gap-3'>
+            <div className='d-flex flex-column gap-3 sidebarlogo'>
                 <img src={instgramnameimg} alt="Instagram" />
                 <div><i className="bi bi-house-door"></i>Home</div>
                 <div><i className="bi bi-search-heart"></i>Search</div>
